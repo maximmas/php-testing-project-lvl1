@@ -5,12 +5,18 @@ namespace App;
 class Saver
 {
 
-    public function savePage(string $pageUrl, string $content, string $path){
+    public function savePage(string $content, string $fileName):bool
+    {
 
-        $handle = fopen("log.txt", "a+");
-        $x = fwrite($handle, $content);
+        $handle = fopen($fileName, 'wb+');
+
+        if (!$handle){
+            return false;
+        }
+        $result = fwrite($handle, $content);
         fclose($handle);
 
+        return $result;
     }
 
 }

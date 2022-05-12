@@ -7,12 +7,12 @@ class FileNameCreator
 
     public function create(string $url = ''): string|false
     {
-
         if(!$url){
             return false;
         }
 
         return $this->convertDomain($url) . $this->convertPath($url) . '.html';
+
     }
 
 
