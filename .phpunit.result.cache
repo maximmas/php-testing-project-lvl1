@@ -1,0 +1,1 @@
+{"version":1,"defects":{"LoaderTest::testGetPageContent":3,"FileNameCreatorTest::testConvertPath":3,"FileNameCreatorTest::testCreate":4},"times":{"LoaderTest::testGetPageContent":0.797,"FileNameCreatorTest::testConvertDomain":0.002,"FileNameCreatorTest::testConvertPath":0,"FileNameCreatorTest::testCreate":0}}
