@@ -1,0 +1,13 @@
+#!/usr/bin/php
+<?php
+
+if ($argc === 2 && in_array($argv[1], array('--help', '-help', '-h', '-?'))) {
+
+echo "page-loader v.1.0\n";
+echo "Usage: page-loader <url> <destination>\n";
+echo "Options:\n";
+echo "    <url> Remote page address\n";
+echo "    <destination> Path to directory with saved pages. Optional. Default value: ./pages\n";
+} else {
+    require_once 'src/pageLoader.php';
+}

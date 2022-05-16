@@ -12,7 +12,6 @@ class FileNameCreator
         }
 
         return $this->convertDomain($url) . $this->convertPath($url) . '.html';
-
     }
 
 

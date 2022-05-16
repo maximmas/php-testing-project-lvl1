@@ -18,9 +18,7 @@ class Loader
 
     public function getPageContent(string $url): string
     {
-
         return $this->httpClient->get($url)->getBody()->getContents();
-
     }
 
 }
